@@ -11,8 +11,23 @@ while (isNaN(N)) {
   N = Number(prompt("Inserisci un numerooooooooooooo!!!"));
 }
 
+
 for (i = 0 ; i < N ; i++) {
     arr1.push(Math.floor(Math.random() * 100) + 1);
+
+
+    while (arr1.lenght < 10) {
+    arr1.push(Math.floor(Math.random() * 100) + 1);
+
+    }
+
 }
 
+
+
+
+
 console.log(arr1);
+
+
+
