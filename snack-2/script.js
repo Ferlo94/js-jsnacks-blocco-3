@@ -1,33 +1,23 @@
 // Fai inserire un numero, che chiameremo N, all’utente.
 // Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
 
-
-
 let N = Number(prompt("Inserisci un numero"));
-
-const arr1 = [];
 
 while (isNaN(N)) {
   N = Number(prompt("Inserisci un numerooooooooooooo!!!"));
 }
 
+for (let i = 0; i < N; i++) {
 
-for (i = 0 ; i < N ; i++) {
-    arr1.push(Math.floor(Math.random() * 100) + 1);
+  let arr = [];
 
+  for (let i = 0; i < 10; i++) {
+    let N = Math.floor(Math.random() * 100);
 
-    while (arr1.length < 10) {
-    arr1.push(Math.floor(Math.random() * 100) + 1);
+    arr.push(N);
+  } 
 
-    }
-
+  console.log(arr);
 }
-
-
-
-
-
-console.log(arr1);
-
 
 
